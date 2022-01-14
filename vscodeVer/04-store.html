@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a49c7f2a3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="04-store.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="fullpage.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Container">
+        <nav>
+            <ul class="nav_menus">
+                <li><a href="01-mainIndex.html" class="main_logo"><img src="images/logo.svg" width="120px" height="28px"
+                            alt=""></a>
+                </li>
+                <li><a href="02-about.html">about</a></li>
+                <li><a href="03-news.html">news</a></li>
+                <li class="dropmenu item1"><a href="04-store.html">store</a>
+
+                    <ul class="submenu1">
+                        <li><a href="#">coffee</a></li>
+                        <li><a href="#">home brew</a></li>
+                        <li><a href="#">apparel</a></li>
+                        <li><a href="#">goods</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">COFFEE</a></li>
+                <li><a href="#">contact</a></li>
+                <li class="dropmenu item2"><a href="#">private</a>
+                    <ul class="submenu2">
+                        <li><a href="#">개인결제창</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav_icons">
+
+                <li><a class="loginbtn" href="#"><i class="xi-log-in"></i></a></li>
+                <li><a href="#"><i class="xi-user-o"></i></a></li>
+                <li><a href="#"><i class="xi-briefcase"></i></a></li>
+                <li><a href="#"><i class="xi-search"></i></a></li>
+
+            </ul>
+        </nav>
+
+        <div class="productListContainer">
+            <div class="topSection">
+                <h2>BEST SELLERS</h2>
+                <ul class="bestSellers">
+                    <li>
+                        <div class="productitemContainer item1">
+
+                            <a href="05-product-sell-boredom.html"><img src="images/products/Coffee_blend_boredom.png" alt="" class="productPhoto item1"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="images/products/notice_new.png" alt=""></li>
+                                <li><img src="images/products/notice_limited.png" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item1">
+                                <li><span class="pdtTitle">블렌드 '보어돔'</span></li>
+                                <li><span class="pdtPrice">23,000원</span></li>
+                            </ul>
+
+                        </div>
+
+
+
+                    </li>
+                    <li>
+                        <div class="productitemContainer item2">
+
+                            <a href="#"><img src="images/products/onion_mug.jpg" alt="" class="productPhoto item1"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="images/products/notice_hot.gif" alt=""></li>
+                                <li><img src="images/products/notice_mdchoice.gif" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item2">
+                                <li><span>어니언 굿즈 '시그니쳐 머그'</span></li>
+                                <li><span>어니언을 고스란히 담은 대표적인 아이템</span></li>
+                                <li><span>28,000원</span></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                </ul> 
+                  </div>
+
+                <ul class="allSellers">
+                    <li>
+                        <div class="productitemContainer item1">
+                            <a href="#"><img src="images/products/Coffee_blend_boredom.png" alt="" class="productPhoto item1"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="images/products/notice_new.png" alt=""></li>
+                                <li><img src="images/products/notice_limited.png" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item1">
+                                <li><span class="pdtTitle">블렌드 '보어돔'</span></li>
+                                <li><span class="pdtPrice">23,000원</span></li>
+                            </ul>
+
+
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="productitemContainer item2">
+                            <a href="#"><img src="images/products/Coffee_blend_seongsu.png" alt="" class="productPhoto item2"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="images/products/notice_hit.png" alt=""></li>
+                                <li><img src="images/products/notice_best.png" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item1">
+                                <li><span class="pdtTitle">블렌드 '성수'</span></li>
+                                <li><span class="pdtPrice">17,000원</span></li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="productitemContainer item3">
+                            <a href="#"><img src="images/products/Coffee_Teabag_Onion pouch.png" alt="" class="productPhoto item3"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="images/products/notice_hit.png" alt=""></li>
+                                <li><img src="images/products/notice_best.png" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item1">
+                                <li><span class="pdtTitle">티백커피</span></li>
+                                <li><span class="pdtPrice">9,900원</span></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="productitemContainer item4">
+                            <a href="#"><img src="images/products/Coffee_decaffein_Columbia.png" alt="" class="productPhoto item4"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="" alt=""></li>
+                                <li><img src="" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item1">
+                                <li><span class="pdtTitle">디카페인 '콜롬비아'</span></li>
+                                <li><span class="pdtPrice">21,000원</span></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="productitemContainer item5">
+                            <a href="#"><img src="images/products/goods_hoodie.png" alt="" class="productPhoto item5"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="images/products/notice_new.png" alt=""></li>
+                                <li><img src="images/products/notice_limited.png" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item1">
+                                <li><span class="pdtTitle">어니언 어패럴 '후드'</span></li>
+                                <li><span class="pdtPrice">54,000원</span></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="productitemContainer item6">
+                            <a href="#"><img src="images/products/goods_canvas_bag.png" alt="" class="productPhoto item6"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="images/products/notice_limited2" alt=""></li>
+                                <li><img src="images/products/notice_mdchoice.gif" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item1">
+                                <li><span class="pdtTitle">어니언 굿즈 '캔버스백'</span></li>
+                                <li><span class="pdtPrice">19,000원</span></li>
+                            </ul>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="productitemContainer item7">
+                            <a href="#"><img src="images/products/goods_sweatshirt.png" alt="" class="productPhoto item7"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="" alt=""></li>
+                                <li><img src="" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item1">
+                                <li><span class="pdtTitle">어니언 어패럴 '맨투맨'</span></li>
+                                <li><span class="pdtPrice">48,000원</span></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="productitemContainer item8">
+                            <a href="#"><img src="images/products/goods_canvas_bag_hyde.png" alt="" class="productPhoto item8"></a>
+                            <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                    class="xi-angle-right-thin"></i></span>
+                            <ul class="noticebox">
+                                <li><img src="" alt=""></li>
+                                <li><img src="" alt=""></li>
+                            </ul>
+                            <ul class="productInfo item1">
+                                <li><span class="pdtTitle">어니언 굿즈 '캔버스백(HYDE)'</span></li>
+                                <li><span class="pdtPrice">19,000원</span></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                   <li>
+                    <div class="productitemContainer item9">
+
+                        <a href="#"><img src="images/products/onion_mug.jpg" alt="" class="productPhoto item1"></a>
+                        <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                class="xi-angle-right-thin"></i></span>
+                        <ul class="noticebox">
+                            <li><img src="images/products/notice_hot.gif" alt=""></li>
+                            <li><img src="images/products/notice_mdchoice.gif" alt=""></li>
+                        </ul>
+                        <ul class="productInfo item2">
+                            <li><span>어니언 굿즈 '시그니쳐 머그'</span></li>
+                            <li><span>어니언을 고스란히 담은 대표적인 아이템</span></li>
+                            <li><span>28,000원</span></li>
+                        </ul>
+
+                    </div>
+                </li>
+                     <li>
+                    <div class="productitemContainer item10">
+                        <a href="#"><img src="images/products/onion_tape.jpg" alt="" class="productPhoto item8"></a>
+                        <span class="leftArrow"><i class="xi-angle-left-thin"></i></span><span class="rightArrow"><i
+                                class="xi-angle-right-thin"></i></span>
+                        <ul class="noticebox">
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                        </ul>
+                        <ul class="productInfo item1">
+                            <li><span class="pdtTitle">어니언 굿즈 '패턴테이프'</span></li>
+                            <li><span class="pdtPrice">5,500원</span></li>
+                        </ul>
+
+                    </div>
+                </li>
+                </ul>
+
+          
+
+
+
+
+
+        </div>
+
+        <footer>
+            <div class="footerinner">
+                <ul class="footer top">
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CUSTOMER CARE</a></li>
+                </ul>
+                <ul class="footer bottom">
+                    <li>Company. 어니언컴퍼니 Owner. 유주형 Tel. 02-1644-1941 E-mail. onion@onionkr.com Address. 04797 서울특별시 성동구
+                        아차산로9길 8 (성수동2가) 1,2층</li>
+                    <li>Business License. 4788700882 Mail Order License. 제2020-서울성동-00970호</li>
+                    <li>Copyright ©Cafe Onion 카페 어니언 All rights reserved.</li>
+                </ul>
+
+                <a href="https://www.instagram.com/cafe.onion/">instagram</a>
+            </div>
+        </footer>
+        <span class="topbtn"><i class="xi-long-arrow-up"></i></span>
+
+    <div class="hambugerWrap">
+     <div class="" id="lineWrapper">
+         <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>
+     </div>
+
+    </div>
+
+    </div>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $("#Container .topbtn").addClass("on");
+
+            } else {
+                $("#Container .topbtn").removeClass("on");
+            }
+        });
+
+        $("#Container .topbtn").click(function () {
+            $("HTML").animate({
+                scrollTop: 0
+            }, 500, "swing");
+        });
+
+
+
+        $(function () {
+
+            const pdtConlength = $(".productitemContainer").length;
+
+
+            $("#Container>nav>.nav_menus li").hover(function () {
+                    $(this).children("ul").stop().slideToggle(500);
+                },
+                function () {
+                    $(this).children("ul").css("display", "none");
+                });
+
+            for (let i = 0; i < pdtConlength; i++) {
+
+                $(".productitemContainer").eq(i).hover(function () {
+
+                        $(".productitemContainer").eq(i).find(".leftArrow").addClass("on");
+                        $(".productitemContainer").eq(i).find(".rightArrow").addClass("on");
+                    }, function () {
+                        $(".productitemContainer").eq(i).find(".leftArrow").removeClass("on");
+                        $(".productitemContainer").eq(i).find(".rightArrow").removeClass("on");
+
+                    }
+
+                );
+            };
+
+        });
+
+        //       $(function(){
+        //           const leftArrow = $(".productListContainer>.topSection>ul>li>.productitemContainer>.leftArrow");
+        //           const rightArrow = $(".productListContainer>.topSection>ul>li>.productitemContainer>.rightArrow");
+        //           const pdtConlength= $(".productitemContainer").length;
+
+        //           for(let i=0; i<5; i++){
+
+        //           $(".productitemContainer").eq(i).hover(function(){
+
+        //       leftArrow.addClass("on");
+        //       rightArrow.addClass("on");
+        //     },function(){
+        //         leftArrow.removeClass("on");
+        //       rightArrow.removeClass("on");
+
+        //     }
+
+        //     );
+        // } ;    
+
+        //       });
+    </script>
+</body>
+
+</html>

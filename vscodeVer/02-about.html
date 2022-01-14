@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a49c7f2a3e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="02-about.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Cafe Onion 카페 어니언</title>
+</head>
+
+<body>
+    <div id="Container">
+        <nav>
+            <ul class="nav_menus">
+                <li><a href="01-mainIndex.html" class="main_logo"><img src="images/logo.svg" width="120px" height="28px" alt=""></a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="03-news.html">news</a></li>
+                <li class="dropmenu item1"><a href="04-store.html">store</a>
+                    <ul class="submenu1">
+                        <li><a href="#">coffee</a></li>
+                        <li><a href="#">home brew</a></li>
+                        <li><a href="#">apparel</a></li>
+                        <li><a href="#">goods</a></li>
+                        
+
+                    </ul>
+                </li>
+                <li><a href="#">COFFEE</a></li>
+                <li><a href="#">contact</a></li>
+                <li class="dropmenu item2"><a href="#">private</a>
+                    <ul class="submenu2">
+                        <li><a href="#">개인결제창</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav_icons">
+                <li><a href="#"><i class="xi-log-in"></i></a></li>
+                <li><a href="#"><i class="xi-user-o"></i></a></li>
+                <li><a href="#"><i class="xi-briefcase"></i></a></li>
+                <li><a href="#"><i class="xi-search"></i></a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="aboutimg"></div>
+        </section>
+        <footer>
+            <div class="footerinner">
+                <ul class="footer top">
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CUSTOMER CARE</a></li>
+                </ul>
+                <ul class="footer bottom">
+                    <li>Company. 어니언컴퍼니 Owner. 유주형 Tel. 02-1644-1941 E-mail. onion@onionkr.com Address. 04797 서울특별시 성동구
+                        아차산로9길 8 (성수동2가) 1,2층</li>
+                    <li>Business License. 4788700882 Mail Order License. 제2020-서울성동-00970호</li>
+                    <li>Copyright ©Cafe Onion 카페 어니언 All rights reserved.</li>
+                </ul>
+
+                <a href="https://www.instagram.com/cafe.onion/">instagram</a>
+            </div>
+        </footer>
+     <span class="topbtn"><i class="xi-long-arrow-up"></i></span>
+    </div>
+
+    <script>
+        $(function () {
+            // $(window).scroll(function () {
+            //     if ($(this).scrollTop() > 0) {
+            //         $("section .aboutimg").addClass("on");
+
+            //     } else {
+            //         $("section .aboutimg").removeClass("on");
+            //     }
+            // });
+            $(window).scroll(function (){
+                if ($(this).scrollTop() > 50) {
+                    $("#Container .topbtn").addClass("on");
+
+                } else {
+                    $("#Container .topbtn").removeClass("on");
+                }
+            });
+
+            $("#Container .topbtn").click(function(){
+                $("HTML").animate({scrollTop:0},500,"swing");
+            });
+
+            $("#Container>nav>.nav_menus li").hover(function () {
+                    $(this).children("ul").stop().slideToggle(500);
+                },
+                function () {
+                    $(this).children("ul").css("display", "none");
+                });
+            $("#Container>nav li a").hover(function(){
+            $(this).css({color:"#9e9e9e"});
+            },function(){
+            $(this).css({color:"black"});
+            }
+            );
+           
+           $(".nav_icons>li>a>.xi-log-in").click(function(e){
+               e.preventDefault();
+              location.href="01-mainIndex.html";
+              $("#Container >.loginView").addClass("on");
+           });
+        
+
+        });
+    </script>
+
+</body>
+
+</html>
